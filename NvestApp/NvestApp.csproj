@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NvestApp.ControlStatement.IterationStatement.Pattern3</StartupObject>
+    <StartupObject>NvestApp.ArrayProgram.ArrayDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,13 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayProgram\ArrayDemo.cs" />
     <Compile Include="BasicProgram\Writing_Reading.cs" />
     <Compile Include="ControlStatement\BasicCalculator.cs" />
     <Compile Include="ControlStatement\Demo.cs" />
+    <Compile Include="ControlStatement\IterationStatement\DoWhileLoopDemo.cs" />
     <Compile Include="ControlStatement\IterationStatement\ForLoopDemo.cs" />
     <Compile Include="ControlStatement\IterationStatement\Pattern1.cs" />
     <Compile Include="ControlStatement\IterationStatement\Pattern2.cs" />
     <Compile Include="ControlStatement\IterationStatement\Pattern3.cs" />
+    <Compile Include="ControlStatement\IterationStatement\ReverseNumber.cs" />
+    <Compile Include="ControlStatement\IterationStatement\WhileLoopDemo.cs" />
     <Compile Include="ControlStatement\SwitchCaseDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
