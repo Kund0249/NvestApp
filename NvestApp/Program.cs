@@ -10,7 +10,7 @@ namespace NvestApp
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hii");
         }
     }
 }
