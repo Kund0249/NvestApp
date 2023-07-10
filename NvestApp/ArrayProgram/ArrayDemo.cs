@@ -40,10 +40,18 @@ namespace NvestApp.ArrayProgram
                 Numbers[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            foreach (int n in Numbers)
+            int Sum = 0;
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                Console.WriteLine(n);
+                Sum += Numbers[i];
             }
+            //foreach (int n in Numbers)
+            //{
+            //    // Console.WriteLine(n);
+            //    Sum += n;
+            //}
+
+            Console.WriteLine("Total : " + Sum);
         }
     }
 }
