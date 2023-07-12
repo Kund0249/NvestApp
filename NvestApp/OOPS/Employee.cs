@@ -6,21 +6,13 @@ using System.Threading.Tasks;
 
 namespace NvestApp.OOPS
 {
-    class Employee
+   public class Employee
     {
-        public int EmployeeId;
-        public string EmployeeName;
+        public int EmpId;
+        public string Name;
         public int Age;
-        public float Salary;
-        public bool IsMarried;
-
-        public Employee()
-        {
-            EmployeeId = 0;
-            EmployeeName = string.Empty;
-            Age = 0;
-            Salary = 0.0F;
-            IsMarried = false;
-        }
+        public string Gender;
+        public string PrimaryContact;
+        public string SecondaryContact;
     }
 }

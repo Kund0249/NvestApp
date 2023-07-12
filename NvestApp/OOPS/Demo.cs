@@ -39,13 +39,39 @@ namespace NvestApp.OOPS
             //Student S3 = new Student() { RollNo = 3, Name = "C" };
             //Student S4 = new Student() { RollNo = 4, Name = "D" };
 
-            Student S1 = new Student() { Name = "A" };
-            Student S2 = new Student() { Name = "B" };
-            Student S3 = new Student() { Name = "C" };
-            Student S4 = new Student() { Name = "D" };
-            Console.WriteLine();
-            Console.WriteLine("Roll " + S3.GetRoll());
-            Console.WriteLine("Total Count : " + Student.Counter);
+            //Student S1 = new Student() { Name = "A" };
+            //Student S2 = new Student() { Name = "B" };
+            //Student S3 = new Student() { Name = "C" };
+            //Student S4 = new Student() { Name = "D" };
+            //Console.WriteLine();
+            //Console.WriteLine("Roll " + S3.GetRoll());
+            //Console.WriteLine("Total Count : " + Student.Counter);
+
+            //EmployeeRePo _repo = new EmployeeRePo();
+
+            //Employee employee = _repo.GetEmployee(3);
+
+            //if (employee != null)
+            //{
+            //    //Console.WriteLine("Id : {0} Name : {1} Age : {2} Primary Contact : {3}",
+            //    //employee.EmpId, employee.Name, employee.Age, employee.PrimaryContact);
+            //    //Console.WriteLine("Emp Code : " + employee.EmpId + "  Name : " + employee.Name);
+            //    Console.WriteLine($"EmpCode : {employee.EmpId}  Name : {employee.Name}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not Found");
+            //}
+
+            EmployeeRePo _repo = new EmployeeRePo();
+
+             Employee[] employees = _repo.GetAllEmployees();
+
+            foreach (Employee emp in employees)
+            {
+                Console.WriteLine($"EmpCode : {emp.EmpId}   Name : {emp.Name}");
+                Console.WriteLine("-----------------------------------------------");
+            }
         }
     }
 }

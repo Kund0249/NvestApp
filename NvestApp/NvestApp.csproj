@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NvestApp.ArrayProgram.ArrayDemo</StartupObject>
+    <StartupObject>NvestApp.OOPS.Demo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayProgram\AdditionOfMatrix.cs" />
     <Compile Include="ArrayProgram\ArrayDemo.cs" />
+    <Compile Include="ArrayProgram\MatrixArray.cs" />
     <Compile Include="BasicProgram\Writing_Reading.cs" />
     <Compile Include="ControlStatement\BasicCalculator.cs" />
     <Compile Include="ControlStatement\Demo.cs" />
@@ -58,6 +60,13 @@
     <Compile Include="ControlStatement\IterationStatement\ReverseNumber.cs" />
     <Compile Include="ControlStatement\IterationStatement\WhileLoopDemo.cs" />
     <Compile Include="ControlStatement\SwitchCaseDemo.cs" />
+    <Compile Include="OOPS\Demo.cs" />
+    <Compile Include="OOPS\Employee.cs" />
+    <Compile Include="OOPS\EmployeeRePo.cs" />
+    <Compile Include="OOPS\FuleContainer.cs" />
+    <Compile Include="OOPS\Methods\Demo.cs" />
+    <Compile Include="OOPS\Methods\MathUtil.cs" />
+    <Compile Include="OOPS\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

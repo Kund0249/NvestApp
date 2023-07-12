@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
+using NvestApp.OOPS;
 
 namespace NvestApp
 {
@@ -10,7 +8,15 @@ namespace NvestApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hii");
+            string Name = Console.ReadLine();
+            int Num = Convert.ToInt32("10");
+
+            //Console.WriteLine("Hii");
+            ArrayList list = new ArrayList();
+            list.Add(1);
+
+            EmployeeRePo _repo = new EmployeeRePo();
+            Employee employee =  _repo.GetEmployee(1);
         }
     }
 }
