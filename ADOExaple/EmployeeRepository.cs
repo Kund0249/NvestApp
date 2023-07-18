@@ -7,6 +7,7 @@ namespace ADOExaple
     class EmployeeRepository
     {
         string connectionstring = @"data source=.;database=Sample;trusted_connection=true";
+        //@"data source=.;database=Sample;user=sa;password=admin@1234";
 
         public ArrayList GetEmployees()
         {
@@ -15,7 +16,10 @@ namespace ADOExaple
 
             SqlConnection con = new SqlConnection(connectionstring);
 
-            SqlCommand cmd = new SqlCommand("select * from TEMPLOYEE", con);
+            //SqlCommand cmd = new SqlCommand("select * from TEMPLOYEE", con);
+
+            SqlCommand cmd = new SqlCommand("spGetAllEmployees", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
             con.Open();
             SqlDataReader reader = cmd.ExecuteReader();
@@ -30,14 +34,14 @@ namespace ADOExaple
 
                 //employeelist.Add(employee);
 
-                //employeelist.Add(new Employee()
-                //{
-                //    EmpCode = Convert.ToInt32(reader["EmpCode"]),
-                //    EmpName = reader["EmpName"].ToString(),
-                //    Gender = reader["Gender"].ToString()
-                //});
+                employeelist.Add(new Employee()
+                {
+                    EmpCode = Convert.ToInt32(reader["EmpCode"]),
+                    EmpName = reader["EmpName"].ToString(),
+                    Gender = reader["Gender"].ToString()
+                });
 
-              
+
             }
             con.Close();
             return employeelist;
@@ -52,7 +56,12 @@ namespace ADOExaple
 
             SqlConnection con = new SqlConnection(connectionstring);
 
-            SqlCommand cmd = new SqlCommand("",con);
+            SqlCommand cmd = new SqlCommand("spInsertEmployee", con);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            //cmd.Parameters.AddWithValue("@EmpCode", employee.EmpCode);
+            cmd.Parameters.AddWithValue("@EmpName", employee.EmpName);
+            cmd.Parameters.AddWithValue("@Gender", employee.Gender);
 
             con.Open();
             int row = cmd.ExecuteNonQuery();

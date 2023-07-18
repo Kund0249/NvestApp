@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADOExaple.Startup</StartupObject>
+    <StartupObject>ADOExaple.PolyMorphism.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeRepository.cs" />
+    <Compile Include="PolyMorphism\MathUitility.cs" />
+    <Compile Include="PolyMorphism\Startup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\Car.cs" />

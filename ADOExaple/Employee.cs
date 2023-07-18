@@ -14,13 +14,14 @@ namespace ADOExaple
 
         public int EmpCode
         {
-            set
-            {
-                if (value > 0)
-                    _EmpCode = value;
-                else
-                    throw new Exception("The value for the property EmpCode is Invalid");
-            }
+            set { _EmpCode = value; }
+            //set
+            //{
+            //    if (value > 0)
+            //        _EmpCode = value;
+            //    else
+            //        throw new Exception("The value for the property EmpCode is Invalid");
+            //}
 
             get
             {

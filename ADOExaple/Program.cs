@@ -11,7 +11,8 @@ namespace ADOExaple
     {
         static void Main(string[] args)
         {
-          
+
+            Console.WriteLine();
             EmployeeRepository repository = new EmployeeRepository();
 
             //Employee employee = new Employee()

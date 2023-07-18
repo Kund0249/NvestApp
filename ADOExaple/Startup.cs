@@ -15,12 +15,12 @@ namespace ADOExaple
             EmployeeRepository repository = new EmployeeRepository();
 
             //------------------------------------------------
-            Employee employee1 = new Employee()
-            {
-                EmpCode = 13,
-                EmpName = "Ajay",
-                Gender = "M"
-            };
+            //Employee employee1 = new Employee()
+            //{
+            //    EmpCode = 13,
+            //    EmpName = "Ajay",
+            //    Gender = "M"
+            //};
            // Console.WriteLine("Employee EmpCode : " + employee1.EmpCode);
             //-----------------------------------------------
 
@@ -38,6 +38,12 @@ namespace ADOExaple
                     case 1:
                         Employee employee = new Employee();
                         //employee.SetData();
+                        Console.Write("Enter EmpName : ");
+                        employee.EmpName = Console.ReadLine();
+
+                        Console.Write("Enter Gender : ");
+                        employee.Gender = Console.ReadLine();
+
                         repository.Save(employee);
                         break;
                     case 2:
@@ -46,7 +52,7 @@ namespace ADOExaple
                         {
                             Console.WriteLine("-------------------------------");
 
-                            //Console.WriteLine($"{emp.EmpCode}    {emp.EmpName}     {emp.Gender}");
+                            Console.WriteLine($"{emp.EmpCode}    {emp.EmpName}     {emp.Gender}");
                         }
                         break;
                     case 3:
