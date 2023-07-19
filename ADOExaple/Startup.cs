@@ -10,20 +10,7 @@ namespace ADOExaple
     {
         static void Main(string[] args)
         {
-
-
             EmployeeRepository repository = new EmployeeRepository();
-
-            //------------------------------------------------
-            //Employee employee1 = new Employee()
-            //{
-            //    EmpCode = 13,
-            //    EmpName = "Ajay",
-            //    Gender = "M"
-            //};
-           // Console.WriteLine("Employee EmpCode : " + employee1.EmpCode);
-            //-----------------------------------------------
-
 
             Console.WriteLine("-----------------------------");
             Console.WriteLine("[New Emp-1] [Get Emp - 2] [Exit - 3]");

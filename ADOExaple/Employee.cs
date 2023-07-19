@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADOExaple
 {
-    class Employee
+    class Employee 
     {
         private int _EmpCode;
         private string _EmpName;
@@ -59,54 +59,11 @@ namespace ADOExaple
             }
         }
 
-        //public void SetEmpCode(int Value)
-        //{
-        //    if (Value > 0)
-        //        EmpCode = Value;
-        //    else
-        //        throw new Exception("The value for the property EmpCode is Invalid");
-        //}
+        public override string ToString()
+        {
+            return string.Format($"EmpCode : {EmpCode}  EmpName : {EmpName}  Gender {Gender}");
+        }
 
-        //public int GetEmpCode()
-        //{
-        //    return EmpCode;
-        //}
-
-        //public void SetEmpName(string Value)
-        //{
-        //    if (!string.IsNullOrEmpty(Value))
-        //        EmpName = Value;
-        //    else
-        //        throw new Exception("The value for the property EmpName is Invalid");
-        //}
-
-        //public string GetEmpName()
-        //{
-        //    return EmpName;
-        //}
-        //public void SetGender(string Value)
-        //{
-        //    if (!string.IsNullOrEmpty(Value) && (Value.ToLower() == "m" || Value.ToLower() == "f"))
-        //        Gender = Value;
-        //    else
-        //        throw new Exception("The value for the property Gender is Invalid");
-        //}
-
-        //public string GetGender()
-        //{
-        //    return Gender;
-        //}
-
-        //public void SetData()
-        //{
-        //    Console.Write("Employee Code : ");
-        //    EmpCode = Convert.ToInt32(Console.ReadLine());
-
-        //    Console.Write("Employee Name : ");
-        //    EmpName = Console.ReadLine();
-
-        //    Console.Write("Employee Gender : ");
-        //    Gender = Console.ReadLine();
-        //}
+       
     }
 }

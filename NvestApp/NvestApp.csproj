@@ -33,9 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NvestApp.OOPS.Inheretance.Startup</StartupObject>
+    <StartupObject>NvestApp.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EmailService">
+      <HintPath>..\..\..\..\Desktop\EmailServices Lib\EmailService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +63,7 @@
     <Compile Include="ControlStatement\IterationStatement\ReverseNumber.cs" />
     <Compile Include="ControlStatement\IterationStatement\WhileLoopDemo.cs" />
     <Compile Include="ControlStatement\SwitchCaseDemo.cs" />
+    <Compile Include="CustomMailService.cs" />
     <Compile Include="OOPS\Demo.cs" />
     <Compile Include="OOPS\Employee.cs" />
     <Compile Include="OOPS\EmployeeRePo.cs" />

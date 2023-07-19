@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeRepository.cs" />
+    <Compile Include="PolyMorphism\CustomMailService.cs" />
+    <Compile Include="PolyMorphism\EmailService.cs" />
     <Compile Include="PolyMorphism\MathUitility.cs" />
     <Compile Include="PolyMorphism\Startup.cs" />
     <Compile Include="Program.cs" />
