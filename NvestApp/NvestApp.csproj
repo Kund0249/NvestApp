@@ -84,5 +84,8 @@
   <ItemGroup>
     <Content Include="MailLib\EmailService.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstraction\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

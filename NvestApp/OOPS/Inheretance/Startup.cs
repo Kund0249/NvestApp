@@ -10,21 +10,7 @@ namespace NvestApp.OOPS.Inheretance
     {
         static void Main(string[] args)
         {
-            SavingAccount savingAccount = new SavingAccount()
-            {
-                AccountNumber = "",
-                AccountHolder = "",
-                ROI = 3.5F
-            };
-
-            CurrentAccount currentAccount = new CurrentAccount()
-            {
-                AccountHolder = "",
-                AccountNumber = "",
-                OrgName = "abc pvt ltd"
-            };
-
-           
+            Account account = new CurrentAccount();
         }
     }
 }
