@@ -33,11 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NvestApp.Program</StartupObject>
+    <StartupObject>NvestApp.AbstractionDemo.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EmailService">
-      <HintPath>..\..\..\..\Desktop\EmailServices Lib\EmailService.dll</HintPath>
+    <Reference Include="EmailService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\EmailServices Lib\NewLib\EmailService.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractionDemo\CSVFileReader.cs" />
+    <Compile Include="AbstractionDemo\ExcelFileReader.cs" />
+    <Compile Include="AbstractionDemo\FileReader.cs" />
+    <Compile Include="AbstractionDemo\Startup.cs" />
     <Compile Include="ArrayProgram\AdditionOfMatrix.cs" />
     <Compile Include="ArrayProgram\ArrayDemo.cs" />
     <Compile Include="ArrayProgram\MatrixArray.cs" />

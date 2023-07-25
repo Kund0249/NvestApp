@@ -9,6 +9,13 @@ namespace NvestApp.OOPS.Inheretance
     public class SavingAccount : Account
     {
         public float ROI;
+
+        public override void CreatAccount()
+        {
+           //code
+        }
         //
+
+
     }
 }

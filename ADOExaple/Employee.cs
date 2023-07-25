@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADOExaple
 {
-    class Employee 
+   public class Employee 
     {
         private int _EmpCode;
         private string _EmpName;

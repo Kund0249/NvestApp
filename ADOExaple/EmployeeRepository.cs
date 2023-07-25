@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace ADOExaple
 {
-    class EmployeeRepository
+    class EmployeeRepository : IEmployeeRepository
     {
         string connectionstring = @"data source=.;database=Sample;trusted_connection=true";
         //@"data source=.;database=Sample;user=sa;password=admin@1234";
@@ -46,7 +46,6 @@ namespace ADOExaple
             con.Close();
             return employeelist;
         }
-
         public void Save(Employee employee)
         {
             //Insert into TEMPLOYEE Values(7,'John','M')

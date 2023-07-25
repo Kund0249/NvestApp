@@ -10,11 +10,9 @@ namespace NvestApp.OOPS.Inheretance
     {
         public string OrgName { get; set; }
 
-        public override void CreateAccount(Account account)
+        public override void CreatAccount()
         {
-            Console.WriteLine(account.AccountHolder);
-            Console.WriteLine(account.AccountNumber);
-           
+            //code
         }
     }
 }

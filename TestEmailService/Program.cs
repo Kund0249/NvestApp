@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NvestApp.OOPS.Inheretance
+namespace TestEmailService
 {
-    class Startup
+    class Program
     {
         static void Main(string[] args)
         {
-          //  Account account = new Account();
         }
     }
 }

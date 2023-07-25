@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6619946B-0172-4C55-BE64-26EFE788780D}</ProjectGuid>
+    <ProjectGuid>{03C15FA0-5341-4ACB-B5BD-81277A37FFFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ADOExaple</RootNamespace>
-    <AssemblyName>ADOExaple</AssemblyName>
+    <RootNamespace>TestEmailService</RootNamespace>
+    <AssemblyName>TestEmailService</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ADOExaple.PolyMorphism.Startup</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,18 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeRepository.cs" />
-    <Compile Include="IEmployeeRepository.cs" />
-    <Compile Include="PolyMorphism\CustomMailService.cs" />
-    <Compile Include="PolyMorphism\EmailService.cs" />
-    <Compile Include="PolyMorphism\MathUitility.cs" />
-    <Compile Include="PolyMorphism\Startup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\Car.cs" />
-    <Compile Include="Query\Startup.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace NvestApp.OOPS.Inheretance
 {
-    abstract public class Account
+   abstract  public class Account
     {
         public string AccountNumber;
         public string AccountHolder;
 
-        public abstract void CreateAccount(Account account);
+        public abstract void CreatAccount();
+       
     }
 }

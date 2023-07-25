@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using NvestApp.OOPS;
-using EmailService;
+
 
 namespace NvestApp
 {
@@ -11,7 +11,7 @@ namespace NvestApp
         {
             Console.WriteLine("Hii");
             CustomMailService service = new CustomMailService();
-            service.SendMail("test@gmail.com", "test@gmail.com", "Subject", "Body", "Thanks & Regards, John");
+            //service.SendMail("test@gmail.com", "test@gmail.com", "Subject", "Body", "Thanks & Regards, John");
 
             //string Name = Console.ReadLine();
             //int Num = Convert.ToInt32("10");
