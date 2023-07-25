@@ -9,7 +9,7 @@ namespace ADOExaple
 {
    public interface IEmployeeRepository
     {
-        ArrayList GetEmployees();
+        List<Employee> GetEmployees();
         void Save(Employee employee);
     }
 }

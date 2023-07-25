@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NvestApp.AbstractionDemo.Startup</StartupObject>
+    <StartupObject>NvestApp.Generic_Example.Demo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EmailService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -69,6 +69,10 @@
     <Compile Include="ControlStatement\IterationStatement\WhileLoopDemo.cs" />
     <Compile Include="ControlStatement\SwitchCaseDemo.cs" />
     <Compile Include="CustomMailService.cs" />
+    <Compile Include="ExceptionHandling\CustomException.cs" />
+    <Compile Include="ExceptionHandling\Demo.cs" />
+    <Compile Include="Generic_Example\Demo.cs" />
+    <Compile Include="Generic_Example\Department.cs" />
     <Compile Include="OOPS\Demo.cs" />
     <Compile Include="OOPS\Employee.cs" />
     <Compile Include="OOPS\EmployeeRePo.cs" />

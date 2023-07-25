@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace ADOExaple
@@ -9,10 +10,9 @@ namespace ADOExaple
         string connectionstring = @"data source=.;database=Sample;trusted_connection=true";
         //@"data source=.;database=Sample;user=sa;password=admin@1234";
 
-        public ArrayList GetEmployees()
+        public List<Employee> GetEmployees()
         {
-            ArrayList employeelist = new ArrayList();
-
+            List<Employee> employeelist = new List<Employee>();
 
             SqlConnection con = new SqlConnection(connectionstring);
 
